@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Available Rooms</title>
+</head>
+<body>
+<h1>Available Rooms</h1>
+
+<ul>
+    {% for room in rooms %}
+    <li>
+        {{room}}
+    </li>
+    {% endfor %}
+
+<p>
+    Go back  <strong> <a href="{% url 'welcome'  %}"> Home </a> </strong>
+</p>
+
+</body>
+</html>
